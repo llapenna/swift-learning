@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var postList: [APIResponses.Post]? = nil
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            if let posts = postList {
+                List(posts) { post in
+                    NavigationLink {
+                        PostView(for: post)
+                    } label: {
+                        Text(post.title)
+                    }
+                }
+                .listStyle(.inset)
+                .navigationTitle("Posts")
+                .navigationBarTitleDisplayMode(.large)
+            } else {
+                ProgressView()
+            }
         }
-        .padding()
+        .task {
+            await fetchPosts()
+        }
+        .refreshable {
+            await fetchPosts()
+        }
+    }
+    
+    func fetchPosts() async {
+        let posts = await API.getAllPosts()
+        self.postList = posts
     }
 }
 

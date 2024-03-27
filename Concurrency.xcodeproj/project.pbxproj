@@ -11,6 +11,16 @@
 		338920302BB20FA000EEBC18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389202F2BB20FA000EEBC18 /* ContentView.swift */; };
 		338920322BB20FA200EEBC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338920312BB20FA200EEBC18 /* Assets.xcassets */; };
 		338920352BB20FA200EEBC18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338920342BB20FA200EEBC18 /* Preview Assets.xcassets */; };
+		3389203D2BB2326A00EEBC18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3389203C2BB2326A00EEBC18 /* Alamofire */; };
+		338920402BB232A600EEBC18 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389203F2BB232A600EEBC18 /* API.swift */; };
+		338920432BB235D400EEBC18 /* APIResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338920422BB235D400EEBC18 /* APIResponses.swift */; };
+		338920462BB2386800EEBC18 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338920452BB2386800EEBC18 /* PostView.swift */; };
+		338920482BB2698800EEBC18 /* PaywallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338920472BB2698800EEBC18 /* PaywallView.swift */; };
+		33D21FC02BB2EBAA00984A1C /* PhoneCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = 33D21FBF2BB2EBAA00984A1C /* PhoneCodes.json */; };
+		33D21FC22BB2F1D100984A1C /* PhoneCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D21FC12BB2F1D100984A1C /* PhoneCode.swift */; };
+		33D21FC52BB30F1700984A1C /* PhoneSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D21FC42BB30F1700984A1C /* PhoneSheetView.swift */; };
+		33D9D8702BB3210E00CBEBF4 /* OTPSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D86F2BB3210E00CBEBF4 /* OTPSheetView.swift */; };
+		33D9D8742BB458D200CBEBF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D8732BB458D200CBEBF4 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,15 @@
 		3389202F2BB20FA000EEBC18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		338920312BB20FA200EEBC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338920342BB20FA200EEBC18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3389203F2BB232A600EEBC18 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		338920422BB235D400EEBC18 /* APIResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponses.swift; sourceTree = "<group>"; };
+		338920452BB2386800EEBC18 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		338920472BB2698800EEBC18 /* PaywallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaywallView.swift; sourceTree = "<group>"; };
+		33D21FBF2BB2EBAA00984A1C /* PhoneCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneCodes.json; sourceTree = "<group>"; };
+		33D21FC12BB2F1D100984A1C /* PhoneCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCode.swift; sourceTree = "<group>"; };
+		33D21FC42BB30F1700984A1C /* PhoneSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSheetView.swift; sourceTree = "<group>"; };
+		33D9D86F2BB3210E00CBEBF4 /* OTPSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSheetView.swift; sourceTree = "<group>"; };
+		33D9D8732BB458D200CBEBF4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3389203D2BB2326A00EEBC18 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +71,10 @@
 		3389202C2BB20FA000EEBC18 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				338920492BB2EA3A00EEBC18 /* Resources */,
+				338920442BB2384800EEBC18 /* Components */,
+				338920412BB2355500EEBC18 /* Types */,
+				3389203E2BB2329700EEBC18 /* Services */,
 				3389202D2BB20FA000EEBC18 /* ConcurrencyApp.swift */,
 				3389202F2BB20FA000EEBC18 /* ContentView.swift */,
 				338920312BB20FA200EEBC18 /* Assets.xcassets */,
@@ -65,6 +89,51 @@
 				338920342BB20FA200EEBC18 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3389203E2BB2329700EEBC18 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3389203F2BB232A600EEBC18 /* API.swift */,
+				33D9D8732BB458D200CBEBF4 /* User.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		338920412BB2355500EEBC18 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				338920422BB235D400EEBC18 /* APIResponses.swift */,
+				33D21FC12BB2F1D100984A1C /* PhoneCode.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		338920442BB2384800EEBC18 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				33D21FC32BB305D300984A1C /* Paywall */,
+				338920452BB2386800EEBC18 /* PostView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		338920492BB2EA3A00EEBC18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				33D21FBF2BB2EBAA00984A1C /* PhoneCodes.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		33D21FC32BB305D300984A1C /* Paywall */ = {
+			isa = PBXGroup;
+			children = (
+				338920472BB2698800EEBC18 /* PaywallView.swift */,
+				33D21FC42BB30F1700984A1C /* PhoneSheetView.swift */,
+				33D9D86F2BB3210E00CBEBF4 /* OTPSheetView.swift */,
+			);
+			path = Paywall;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +152,9 @@
 			dependencies = (
 			);
 			name = Concurrency;
+			packageProductDependencies = (
+				3389203C2BB2326A00EEBC18 /* Alamofire */,
+			);
 			productName = Concurrency;
 			productReference = 3389202A2BB20FA000EEBC18 /* Concurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +183,9 @@
 				Base,
 			);
 			mainGroup = 338920212BB20FA000EEBC18;
+			packageReferences = (
+				3389203B2BB2326A00EEBC18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 3389202B2BB20FA000EEBC18 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +202,7 @@
 			files = (
 				338920352BB20FA200EEBC18 /* Preview Assets.xcassets in Resources */,
 				338920322BB20FA200EEBC18 /* Assets.xcassets in Resources */,
+				33D21FC02BB2EBAA00984A1C /* PhoneCodes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +214,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				338920302BB20FA000EEBC18 /* ContentView.swift in Sources */,
+				338920432BB235D400EEBC18 /* APIResponses.swift in Sources */,
+				33D21FC22BB2F1D100984A1C /* PhoneCode.swift in Sources */,
+				33D9D8702BB3210E00CBEBF4 /* OTPSheetView.swift in Sources */,
+				338920402BB232A600EEBC18 /* API.swift in Sources */,
 				3389202E2BB20FA000EEBC18 /* ConcurrencyApp.swift in Sources */,
+				33D21FC52BB30F1700984A1C /* PhoneSheetView.swift in Sources */,
+				338920482BB2698800EEBC18 /* PaywallView.swift in Sources */,
+				33D9D8742BB458D200CBEBF4 /* User.swift in Sources */,
+				338920462BB2386800EEBC18 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Concurrency/Preview Content\"";
-				DEVELOPMENT_TEAM = MM8BN4NNS5;
+				DEVELOPMENT_TEAM = G24EQ4P9UT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Concurrency/Preview Content\"";
-				DEVELOPMENT_TEAM = MM8BN4NNS5;
+				DEVELOPMENT_TEAM = G24EQ4P9UT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -344,6 +428,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3389203B2BB2326A00EEBC18 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3389203C2BB2326A00EEBC18 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3389203B2BB2326A00EEBC18 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 338920222BB20FA000EEBC18 /* Project object */;
 }
