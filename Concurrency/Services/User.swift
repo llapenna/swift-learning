@@ -7,6 +7,17 @@
 
 import Foundation
 
-@Observable class User {
+struct UserObject {
+    struct Phone {
+        var code: UInt
+        var number: UInt
+    }
     
+    var name: String
+    var phone: Phone
+}
+
+@Observable class User {
+    var instance: UserObject? = nil
+    var isAuthorized = false
 }

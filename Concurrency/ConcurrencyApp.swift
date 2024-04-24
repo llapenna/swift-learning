@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ConcurrencyApp: App {
+    @State var user: User = User()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environment(user)
         }
     }
 }
