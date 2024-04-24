@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3389202E2BB20FA000EEBC18 /* ConcurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389202D2BB20FA000EEBC18 /* ConcurrencyApp.swift */; };
-		338920302BB20FA000EEBC18 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389202F2BB20FA000EEBC18 /* ContentView.swift */; };
+		338920302BB20FA000EEBC18 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3389202F2BB20FA000EEBC18 /* MainView.swift */; };
 		338920322BB20FA200EEBC18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338920312BB20FA200EEBC18 /* Assets.xcassets */; };
 		338920352BB20FA200EEBC18 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 338920342BB20FA200EEBC18 /* Preview Assets.xcassets */; };
 		3389203D2BB2326A00EEBC18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3389203C2BB2326A00EEBC18 /* Alamofire */; };
@@ -21,12 +21,14 @@
 		33D21FC52BB30F1700984A1C /* PhoneSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D21FC42BB30F1700984A1C /* PhoneSheetView.swift */; };
 		33D9D8702BB3210E00CBEBF4 /* OTPSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D86F2BB3210E00CBEBF4 /* OTPSheetView.swift */; };
 		33D9D8742BB458D200CBEBF4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D8732BB458D200CBEBF4 /* User.swift */; };
+		33D9D8762BB5194F00CBEBF4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D8752BB5194F00CBEBF4 /* LoginView.swift */; };
+		33D9D8782BB519D200CBEBF4 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D9D8772BB519D200CBEBF4 /* PostListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3389202A2BB20FA000EEBC18 /* Concurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Concurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3389202D2BB20FA000EEBC18 /* ConcurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyApp.swift; sourceTree = "<group>"; };
-		3389202F2BB20FA000EEBC18 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3389202F2BB20FA000EEBC18 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		338920312BB20FA200EEBC18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		338920342BB20FA200EEBC18 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3389203F2BB232A600EEBC18 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -38,6 +40,8 @@
 		33D21FC42BB30F1700984A1C /* PhoneSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSheetView.swift; sourceTree = "<group>"; };
 		33D9D86F2BB3210E00CBEBF4 /* OTPSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPSheetView.swift; sourceTree = "<group>"; };
 		33D9D8732BB458D200CBEBF4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		33D9D8752BB5194F00CBEBF4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		33D9D8772BB519D200CBEBF4 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,14 +75,16 @@
 		3389202C2BB20FA000EEBC18 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
-				338920492BB2EA3A00EEBC18 /* Resources */,
-				338920442BB2384800EEBC18 /* Components */,
-				338920412BB2355500EEBC18 /* Types */,
-				3389203E2BB2329700EEBC18 /* Services */,
 				3389202D2BB20FA000EEBC18 /* ConcurrencyApp.swift */,
-				3389202F2BB20FA000EEBC18 /* ContentView.swift */,
+				33D9D8752BB5194F00CBEBF4 /* LoginView.swift */,
+				3389202F2BB20FA000EEBC18 /* MainView.swift */,
+				33D9D8772BB519D200CBEBF4 /* PostListView.swift */,
 				338920312BB20FA200EEBC18 /* Assets.xcassets */,
+				338920442BB2384800EEBC18 /* Components */,
 				338920332BB20FA200EEBC18 /* Preview Content */,
+				338920492BB2EA3A00EEBC18 /* Resources */,
+				3389203E2BB2329700EEBC18 /* Services */,
+				338920412BB2355500EEBC18 /* Types */,
 			);
 			path = Concurrency;
 			sourceTree = "<group>";
@@ -213,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				338920302BB20FA000EEBC18 /* ContentView.swift in Sources */,
+				338920302BB20FA000EEBC18 /* MainView.swift in Sources */,
 				338920432BB235D400EEBC18 /* APIResponses.swift in Sources */,
 				33D21FC22BB2F1D100984A1C /* PhoneCode.swift in Sources */,
 				33D9D8702BB3210E00CBEBF4 /* OTPSheetView.swift in Sources */,
@@ -221,7 +227,9 @@
 				3389202E2BB20FA000EEBC18 /* ConcurrencyApp.swift in Sources */,
 				33D21FC52BB30F1700984A1C /* PhoneSheetView.swift in Sources */,
 				338920482BB2698800EEBC18 /* PaywallView.swift in Sources */,
+				33D9D8762BB5194F00CBEBF4 /* LoginView.swift in Sources */,
 				33D9D8742BB458D200CBEBF4 /* User.swift in Sources */,
+				33D9D8782BB519D200CBEBF4 /* PostListView.swift in Sources */,
 				338920462BB2386800EEBC18 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

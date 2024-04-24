@@ -43,6 +43,10 @@ struct PhoneSheetView: View {
     }
     
     
+    
+}
+
+extension PhoneSheetView {
     static private func getPhoneCodes() -> [PhoneCode] {
         guard let path = Bundle.main.path(forResource: "PhoneCodes", ofType: "json"),
               let data = FileManager.default.contents(atPath: path) else { return [] }
