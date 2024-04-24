@@ -37,7 +37,9 @@ struct PostView: View {
             await fetchComments()
         }
     }
-    
+}
+
+extension PostView {
     func fetchComments() async {
         self.commentList = await API.getComments(for: post.id)
     }
